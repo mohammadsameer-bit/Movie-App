@@ -7,7 +7,7 @@ const form = document.querySelector("form");
 
 form.addEventListener("submit",(e)=>{
     e.preventDefault();
-    let searchValue=searchInput.value;
+    let searchValue = searchInput.value;
     let URL = searchApi + searchValue;
     if(searchValue != "") {
         getData(URL,renderMovies);
